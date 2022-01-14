@@ -78,6 +78,41 @@
     <Compile Include="AspNetUserTokens.cs">
       <DependentUpon>IncubadoraModel.tt</DependentUpon>
     </Compile>
+    <Compile Include="CatAvatars.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatCarreras.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatColonias.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatCuatrimestres.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatEstados.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatMunicipios.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatPaises.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="CatUnidadesAcademicas.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="DatosLaborales.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Direcciones.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Emprendedores.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="EmprendedorRepository.cs" />
+    <Compile Include="EstadoRepository.cs" />
     <Compile Include="IncubadoraModel.Context.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -101,6 +136,12 @@
       <DependentUpon>IncubadoraModel.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Status.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Telefonos.cs">
+      <DependentUpon>IncubadoraModel.tt</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

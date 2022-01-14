@@ -117,15 +117,21 @@ namespace Incubadora.Business
             return respuesta;
         }
 
-
-
-
-
-
-
-
-
-
-
+        /// <summary>
+        /// Este método se encarga de verificar si un usuario existe en el sistema y sus credenciales son las correctas
+        /// </summary>
+        /// <param name="loginDM">Un objeto de tipo LoginDomainModel</param>
+        /// <returns>True si existe el nombre de usuario y su contraseña es correcta, false si no lo es.</returns>
+        public bool Login(LoginDomainModel loginDM)
+        {
+            var user = repository.SingleOrDefault(u => u.UserName == loginDM.UserName);
+            if (user != null)
+            {
+                // el usuario existe en la db, comrobando contraseña...
+                return user.PasswordHash == loginDM.PasswordHash;
+            }
+            // el nombre de usuario no existe
+            return false;
+        }
     }
 }

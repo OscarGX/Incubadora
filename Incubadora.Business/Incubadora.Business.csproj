@@ -44,8 +44,12 @@
   <ItemGroup>
     <Compile Include="AspNetRolesBusiness.cs" />
     <Compile Include="AspNetUsersBusiness.cs" />
+    <Compile Include="EmprendedorBusiness.cs" />
+    <Compile Include="EstadoBusiness.cs" />
     <Compile Include="Interface\IAspNetRolesBusiness.cs" />
     <Compile Include="Interface\IAspNetUsersBusiness.cs" />
+    <Compile Include="Interface\IEmprendedorBusiness.cs" />
+    <Compile Include="Interface\IEstadoBusiness.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

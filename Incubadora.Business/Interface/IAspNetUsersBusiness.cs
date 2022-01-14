@@ -18,5 +18,12 @@ namespace Incubadora.Business.Interface
         /// </summary>
         /// <returns>una lista de usuariosDomainModel</returns>
         List<AspNetUsersDomainModel> GetUserRoles();
+
+        /// <summary>
+        /// Este método se encarga de verificar si un usuario existe en el sistema y sus credenciales son las correctas
+        /// </summary>
+        /// <param name="loginDM">Un objeto de tipo LoginDomainModel</param>
+        /// <returns>True si existe el nombre de usuario y su contraseña es correcta, false si no lo es.</returns>
+        bool Login(LoginDomainModel loginDM);
     }
 }

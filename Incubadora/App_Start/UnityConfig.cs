@@ -22,6 +22,8 @@ namespace Incubadora
             
             container.RegisterType<IAspNetRolesBusiness, AspNetRolesBusiness>();
             container.RegisterType<IAspNetUsersBusiness, AspNetUsersBusiness>();
+            container.RegisterType<IEmprendedorBusiness, EmprendedorBusiness>();
+            container.RegisterType<IEstadoBusiness, EstadoBusiness>();
 
             DependencyResolver.SetResolver(new UnityDependencyResolver(container));
         }

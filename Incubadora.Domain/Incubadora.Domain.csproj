@@ -44,7 +44,13 @@
   <ItemGroup>
     <Compile Include="AspnetRolesDomainModel.cs" />
     <Compile Include="AspNetUsersDomainModel.cs" />
+    <Compile Include="DatoLaboralDomainModel.cs" />
+    <Compile Include="DireccionDomainModel.cs" />
+    <Compile Include="EmprendedorDomainModel.cs" />
+    <Compile Include="EstadoDomainModel.cs" />
+    <Compile Include="LoginDomainModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TelefonoDomainModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

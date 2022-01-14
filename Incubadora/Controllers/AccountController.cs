@@ -73,9 +73,37 @@ namespace Incubadora.Controllers
         }
         #endregion
 
+        [HttpGet]
         public ActionResult Login()
         {
             return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Login(LoginVM loginVM)
+        {
+            try
+            {
+                if (ModelState.IsValid)
+                {
+                    LoginDomainModel loginDomainModel = new LoginDomainModel();
+                    AutoMapper.Mapper.Map(loginVM, loginDomainModel);
+                    loginDomainModel.PasswordHash = Funciones.Encrypt(loginDomainModel.PasswordHash);
+                    if (usersBusiness.Login(loginDomainModel))
+                    {
+                        return RedirectToAction("Create", "Account");
+                    }
+                    return View("");
+                }
+                return View();
+            }
+            catch (Exception ex)
+            {
+                Log.Error(ex, "Ocurrió una excepción en el método login (post) del controlador Account");
+                loggerdb.Error(ex);
+                return RedirectToAction("InternalServerError", "Error");
+            }
         }
 
         [HttpGet]

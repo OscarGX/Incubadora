@@ -33,5 +33,18 @@ namespace Incubadora.Repository
         public virtual DbSet<AspNetRoles> AspNetRoles { get; set; }
         public virtual DbSet<AspNetUserRoles> AspNetUserRoles { get; set; }
         public virtual DbSet<AspNetUsers> AspNetUsers { get; set; }
+        public virtual DbSet<CatAvatars> CatAvatars { get; set; }
+        public virtual DbSet<CatCarreras> CatCarreras { get; set; }
+        public virtual DbSet<CatColonias> CatColonias { get; set; }
+        public virtual DbSet<CatCuatrimestres> CatCuatrimestres { get; set; }
+        public virtual DbSet<CatEstados> CatEstados { get; set; }
+        public virtual DbSet<CatMunicipios> CatMunicipios { get; set; }
+        public virtual DbSet<CatPaises> CatPaises { get; set; }
+        public virtual DbSet<CatUnidadesAcademicas> CatUnidadesAcademicas { get; set; }
+        public virtual DbSet<DatosLaborales> DatosLaborales { get; set; }
+        public virtual DbSet<Direcciones> Direcciones { get; set; }
+        public virtual DbSet<Emprendedores> Emprendedores { get; set; }
+        public virtual DbSet<Status> Status { get; set; }
+        public virtual DbSet<Telefonos> Telefonos { get; set; }
     }
 }
